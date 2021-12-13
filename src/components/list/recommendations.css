@@ -1,0 +1,15 @@
+.recommendations > div {
+  margin: 1em 0;
+  width: 100%;
+  padding: 1em;
+  overflow-x: scroll;
+  display: flex;
+  gap: 1.5em;
+}
+
+.recommendations div section {
+  width: 11em;
+  background-color: #f1f1f1;
+  border-radius: 0.2em;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.2);
+}

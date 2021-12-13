@@ -1,0 +1,46 @@
+.movie,
+.show {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie .header .text {
+  padding: 0 1em;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.movie .header .text span {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.movie > main,
+.movie > .header,
+.show > main,
+.show > .header {
+  margin: 0 auto;
+}
+
+.movie main > p {
+  margin: 1em 0;
+  font-size: 1rem;
+  max-width: 70ch;
+}
+
+h4.plot {
+  padding-left: 1em;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.companies {
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .movie > main,
+  .show > main {
+    width: 100vw;
+    padding: 0 1em;
+  }
+}

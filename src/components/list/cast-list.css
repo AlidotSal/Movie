@@ -1,0 +1,94 @@
+.cast {
+  width: 100%;
+  overflow: hidden;
+  color: #1f1f1f;
+}
+
+.cast > a {
+  transition: all 0.2s;
+}
+
+.cast > a:hover {
+  color: yellowgreen;
+}
+
+.cast-list {
+  width: 100%;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(6em, 7em));
+  gap: 1.5em;
+  overflow-x: hidden;
+}
+
+.cast-list .actor {
+  color: rgb(56, 75, 128);
+}
+
+.actor .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.42em;
+  line-height: 1;
+}
+
+.actor .text > span {
+  color: rgb(167, 167, 167);
+}
+
+.cast-list .actor img {
+  filter: grayscale(10%);
+  width: 6em;
+  height: 6.5em;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: 10%;
+  transition: all 0.2s;
+}
+
+.cast-list .actor img:hover {
+  filter: grayscale(0);
+}
+
+.cast-list .actor .name {
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.cast-list .actor .name:hover {
+  color: rgb(100, 33, 33);
+  text-shadow: 0 0 1px rgb(60, 44, 44);
+}
+
+@media only screen and (max-width: 700px) {
+  .cast-list {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    gap: 2em;
+    overflow-x: scroll;
+  }
+
+  .cast-list .actor {
+    display: flex;
+    align-items: center;
+    gap: 0.9em;
+    font-size: 0.7em;
+  }
+
+  .cast-list .actor img {
+    width: 4.6em;
+    height: 4.6em;
+    border-radius: 100vh;
+  }
+
+  .cast-list .actor img.light {
+    box-shadow: 0 0 0 2px white, 0 0 5px 0 black;
+  }
+  .cast-list .actor img.dark {
+    box-shadow: 0 0 0 2px #31384d, 0 0 5px 0 black;
+  }
+}

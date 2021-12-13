@@ -1,0 +1,19 @@
+.button-back {
+  position: absolute;
+  cursor: pointer;
+  top: 1.5em;
+  left: 1.2em;
+  width: 12vw;
+  height: 12vw;
+  border: none;
+  border-radius: 50%;
+  padding: 0.8em;
+  opacity: 0.95;
+  transition: all 0.2s;
+}
+
+@media (pointer: fine) {
+  .button-back {
+    display: none;
+  }
+}
